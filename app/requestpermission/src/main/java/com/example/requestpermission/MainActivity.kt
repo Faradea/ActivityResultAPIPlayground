@@ -39,11 +39,10 @@ class MainActivity : AppCompatActivity() {
             askLocationPermission.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
         }
 
-        // There is a bug here
         buttonMultiplePermission.setOnClickListener {
             askMultiplePermissions.launch(arrayOf(
-                android.Manifest.permission.READ_CONTACTS,
-                android.Manifest.permission.BLUETOOTH
+                    android.Manifest.permission.READ_CONTACTS,
+                    android.Manifest.permission.ACCESS_FINE_LOCATION
             ))
         }
     }
