@@ -1,0 +1,5 @@
+include ':app:requestpermission'
+include ':app:customcontract'
+include ':app:resulttoseparatedclass'
+include ':app'
+rootProject.name = "ActivityResultAPIPlayground"
